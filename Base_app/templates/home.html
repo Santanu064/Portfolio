@@ -1,0 +1,235 @@
+{% extends "page_layout.html" %}
+{% load static %} 
+{% block main %}
+
+<section class="self-intro">
+  <div class="details d-flex">
+    <p class="preahvihear-regular">
+      Hello! I Am <span class="self-span">santanu ghosh</span>
+    </p>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <div class="left d-flex justify-content-center align-items-center">
+      <img src="{% static "images/Arrow.png" %}" alt="" class="arrow" />
+      <div class="gradient-circle">
+        <img class="me-img" src="{% static "images/Me.png" %}" alt=""/>
+      </div>
+    </div>
+    <div class="right w-50 d-flex align-items-center">
+      <div class="self-content animate-on-scroll lh-1">
+        <p class="preahvihear-regular tx1">A Developer who</p>
+        <h1 class="preahvihear-regular mb-0 res-intro">Building the digital</h1>
+        <h1 class="preahvihear-regular res-intro">
+          tomorrow, <span class="self-span">Today</span> ...
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="my-intro w-75 preahvihear-regular">
+    <div class="wraper">
+      <div class="static-txt">I Am a</div>
+      <ul class="dynamic-txt">
+        <li><span>Software Developer</span></li>
+        <li><span>Web developer</span></li>
+      </ul>
+    </div>
+    <p class="w-75 current-phase">
+      Currently I'm a student
+      <span class="self-span">@ Michael Madhusudan Memorial Collage </span>
+    </p>
+    <p class="w-75 mt-5 res-ons">
+      I am a software developer with a passion for creating innovative
+      solutions. I have experience in developing web applications using modern
+      technologies. I am always eager to learn new technologies and improve my
+      skills.
+    </p>
+  </div>
+</section>
+<section class="Skill preahvihear-regular">
+  <div class="s-wrap d-flex align-items-center">
+    <h4 class="res-sl">
+      I'm currently looking to join a
+      <span class="self-span">cross-functional</span> team
+    </h4>
+    <h6 class="res-sl1">that values improving people's lives through accessible design</h6>
+  </div>
+  <div class="skill-wrap d-flex justify-content-center">
+    <div class="l-skill">
+      <div class="c-skl">
+        {% for skill in skills %}
+        <div class="skl-1">
+          <img src="{{skill.image.url}}" alt="" class="sk-img" />
+        </div>
+        {% endfor %}
+      </div>
+      <div class="skl">
+        {% for s_skill in skills2 %}
+        <div class="skl-2">
+          <img src="{{s_skill.image.url}}" class="sl-img" alt="" />
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="lines">
+    <div class="curve-container">
+      <svg viewBox="0 0 100" class="curve curve-animation cst1">
+        <defs>
+          <linearGradient id="gradientStroke" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color=" #11071F" />
+            <!-- Dark Purple -->
+            <stop offset="100%" stop-color="#3D1768" />
+            <!-- Lighter Purple -->
+          </linearGradient>
+        </defs>
+        <path d="M 59,270 Q 110,110 ,90,0" class="shine" />
+      </svg>
+      <svg viewBox="0 0 100" class="curve curve-animation cst2">
+        <defs>
+          <linearGradient id="gradientStroke" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color=" #11071F" />
+            <!-- Dark Purple -->
+            <stop offset="100%" stop-color="#3D1768" />
+            <!-- Lighter Purple -->
+          </linearGradient>
+        </defs>
+        <path d="M 85,250 Q 120,90,90,0" class="shine" />
+      </svg>
+      <svg viewBox="0 0 100" class="curve curve-animation cst3">
+        <defs>
+          <linearGradient id="gradientStroke" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color=" #11071F" />
+            <!-- Dark Purple -->
+            <stop offset="100%" stop-color="#3D1768" />
+            <!-- Lighter Purple -->
+          </linearGradient>
+        </defs>
+        <path d="M 65,220 Q 95,70, 90,0" class="shine" />
+      </svg>
+      <svg viewBox="0 0 100 300" class="curve curve-animation cst4">
+        <defs>
+          <linearGradient id="gradientStroke" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color=" #11071F" />
+            <!-- Dark Purple -->
+            <stop offset="100%" stop-color="#3D1768" />
+            <!-- Lighter Purple -->
+          </linearGradient>
+        </defs>
+        <path d="M 75,280 Q 70,150 90,0" />
+      </svg>
+      <svg viewBox="0 0 120 350" class="curve curve-animation cst5">
+        <defs>
+          <linearGradient id="gradientStroke" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color="#11071F" />
+            <!-- Dark Purple -->
+            <stop offset="100%" stop-color="#3D1768" />
+            <!-- Light Purple -->
+          </linearGradient>
+        </defs>
+        <path
+          d="M 50,350 Q 60,120 110,0"
+          stroke="url(#gradientStroke)"
+          stroke-width="2"
+          fill="none"
+        />
+      </svg>
+      <svg viewBox="0 0 100 300" class="curve curve-animation cst6">
+        <defs>
+          <linearGradient id="gradientStroke" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color=" #11071F" />
+            <!-- Dark Purple -->
+            <stop offset="100%" stop-color="#3D1768" />
+            <!-- Lighter Purple -->
+          </linearGradient>
+        </defs>
+        <path d="M 50,300 Q 40,150 90,0" />
+      </svg>
+    </div>
+  </div>
+  <div class="golab">
+    <div class="left d-flex justify-content-center align-items-center">
+      <div class="gradient-circle z-1 h-100">
+        <dotlottie-player
+          src="https://lottie.host/824ab82a-cea0-4e29-8da2-82a8c346a240/pWxXc92peA.lottie"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 180px; position: relative"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="Projects">
+  {% for project in pro|slice:":1" %}
+    <div class="project1 bacis">
+      <div class="pro_left">
+        <div class="l-des">
+          <p class="mb-0 pro-prag">Featured Projects</p>
+          <h2 class="pro-title preahvihear-regular">{{project.project_name}}</h2>
+          <div class="tech">
+            {% for skill in project.technologies.all %}
+            <div class="p-s-wrap">
+              <img class="res-a-img" src="{{skill.image.url}}" alt="" />
+            </div>
+            {% endfor %}
+          </div>
+          <div class="project_Decs">
+            <div class="des preahvihear-regular">
+              {{project.project_Desc}}
+            </div>
+          </div>
+          <div class="pro-btn">
+            <a href="{{project.project_url}}">
+            <button class="btn btn-primary">View Project</button>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-circle pro_right z-1">
+        <div class="bdr-stl">
+          <img class="pro-img" src="{{project.project_image.url}}"
+          alt="">
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% for project in pro|slice:"1:2" %}
+    <div class="project3 bacis">
+      <div class="gradient-circle pro_right1 z-1">
+        <div class="bdr-stl1">
+          <img class="pro-img p3-s" src="{{project.project_image.url}}"
+          alt="">
+        </div>
+      </div>
+      <div class="pro_left">
+        <div class="l-des1">
+          <p class="mb-0 pro-prag1">Featured Projects</p>
+          <h2 class="pro-title1 preahvihear-regular">{{project.project_name}}</h2>
+          <div class="tech1">
+            {% for skill in project.technologies.all %}
+              <div class="p-s-wrap">
+                <img class="p3-img" src="{{skill.image.url}}" alt="" />
+              </div>
+            {% endfor %}
+          </div>
+          <div class="project_Decs1">
+            <div class="des preahvihear-regular">
+              {{project.project_Desc}}
+            </div>
+          </div>
+          <div class="pro-btn1">
+            <a href="{{project.project_url}}">
+            <button class="btn btn-primary">View Project</button>
+          </a>
+          </div>
+        </div>
+      </div>
+      {% comment %}  {% endcomment %}
+    </div>
+  {% endfor %}
+
+</section>
+{% endblock %}
