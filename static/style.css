@@ -839,7 +839,7 @@ height: 20px;
 .project_Decs::after {
   content: "";
   position: absolute;
-  bottom: 124px;
+  bottom: 123px;
   left: 2px;
   width: 93%;
   background: linear-gradient(90deg, rgb(31 9 55) 75%, rgb(161 143 175 / 90%) 98%);
