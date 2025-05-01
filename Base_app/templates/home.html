@@ -58,14 +58,14 @@
       <div class="c-skl">
         {% for skill in skills %}
         <div class="skl-1">
-          <img src="{{skill.image.url}}" alt="" class="sk-img" />
+          <img src="{{skill.image.secure_url}}" alt="" class="sk-img" />
         </div>
         {% endfor %}
       </div>
       <div class="skl">
         {% for s_skill in skills2 %}
         <div class="skl-2">
-          <img src="{{s_skill.image.url}}" class="sl-img" alt="" />
+          <img src="{{s_skill.image.secure_url}}" class="sl-img" alt="" />
         </div>
         {% endfor %}
       </div>
@@ -171,7 +171,7 @@
           <div class="tech">
             {% for skill in project.technologies.all %}
             <div class="p-s-wrap">
-              <img class="res-a-img" src="{{skill.image["url"]}}" alt="" />
+              <img class="res-a-img" src="{{skill.image.secure_url}}" alt="" />
             </div>
             {% endfor %}
           </div>
@@ -189,7 +189,7 @@
       </div>
       <div class="gradient-circle pro_right z-1">
         <div class="bdr-stl">
-          <img class="pro-img" src="{{project.project_image["url"]}}"
+          <img class="pro-img" src="{{project.project_image.secure_url}}"
           alt="">
         </div>
       </div>
