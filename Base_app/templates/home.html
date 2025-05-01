@@ -171,7 +171,7 @@
           <div class="tech">
             {% for skill in project.technologies.all %}
             <div class="p-s-wrap">
-              <img class="res-a-img" src="{{skill.image.url}}" alt="" />
+              <img class="res-a-img" src="{{skill.image["url"]}}" alt="" />
             </div>
             {% endfor %}
           </div>
@@ -189,7 +189,7 @@
       </div>
       <div class="gradient-circle pro_right z-1">
         <div class="bdr-stl">
-          <img class="pro-img" src="{{project.project_image.url}}"
+          <img class="pro-img" src="{{project.project_image["url"]}}"
           alt="">
         </div>
       </div>
