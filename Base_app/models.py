@@ -1,7 +1,8 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 # Create your models here.
 class Skills(models.Model):
-    image = models.ImageField(upload_to='images/');
+    image = CloudinaryField('image')
     name = models.CharField(max_length=100);
     created_at = models.DateTimeField(auto_now_add=True);
     updated_at = models.DateTimeField(auto_now=True);
@@ -11,7 +12,7 @@ class Skills(models.Model):
 
 class Project(models.Model):
     project_name = models.CharField(max_length=150);
-    project_image = models.ImageField(upload_to='project_image/');
+    project_image = CloudinaryField('project_image');
     technologies =  models.ManyToManyField(Skills, related_name="skill");
     project_Desc = models.TextField(default='');
     project_url = models.URLField(null=True)
