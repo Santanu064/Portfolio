@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 import environ
+import cloudinary
 
 env = environ.Env()
 environ.Env.read_env()
@@ -129,6 +130,13 @@ CLOUDINARY_STORAGE = {
     'API_KEY': env('API_KEY'),
     'API_SECRET': env('API_SECRET'),
 }
+
+cloudinary.config(
+    cloud_name = 'dtgfcbmnh',
+    api_key = env('API_KEY'),
+    api_secret = env('API_SECRET')
+)
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
