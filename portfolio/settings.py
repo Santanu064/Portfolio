@@ -123,6 +123,8 @@ USE_I18N = True
 
 USE_TZ = True
 
+
+# cloudnary settings
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
@@ -136,7 +138,6 @@ cloudinary.config(
     api_key = env('API_KEY'),
     api_secret = env('API_SECRET')
 )
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
